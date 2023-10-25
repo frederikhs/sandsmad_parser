@@ -9,6 +9,14 @@
 
 This is a golang package for accessing this weeks dishes at [sandsmad.dk](https://sandsmad.dk) in a structured format.
 
+### Use Cases
+- Slackbot alerting users about today's dish
+- Rating system based on dynamically updated content e.g. [eat-score.hrgn.dk](https://eat-score.hrgn.dk)
+- Freedom
+
+### Why
+Adding a programmatic access to semi-structured data helps 3rd parties develop integrations not possible before. This library exists for the sole purpose of it being able to exist.
+
 ### Example usage
 
 [examples/cli-print/main.go](examples/cli-print/main.go)
