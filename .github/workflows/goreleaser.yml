@@ -20,10 +20,10 @@ jobs:
         with:
           go-version-file: go.mod
           cache: true
-      - uses: ncruces/go-coverage-report@main
       - uses: goreleaser/goreleaser-action@v5
         with:
           version: latest
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: ncruces/go-coverage-report@main
