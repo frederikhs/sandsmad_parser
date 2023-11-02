@@ -20,9 +20,5 @@ jobs:
           version: latest
           args: --timeout=3m
       - run: go vet ./...
+      - run: go test -race ./...
       - run: go build
-      - run: go test -race -coverprofile=coverage.out -covermode=atomic ./...
-      - uses: codecov/codecov-action@v3
-        if: ${{ github.event_name != 'schedule' }}
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
