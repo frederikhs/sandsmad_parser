@@ -1,6 +1,6 @@
 module github.com/frederikhs/sandsmad_parser
 
-go 1.21.3
+go 1.21.4
 
 require (
 	astuart.co/goq v1.0.0
@@ -10,5 +10,5 @@ require (
 require (
 	github.com/andybalholm/cascadia v1.3.2 // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
-	golang.org/x/net v0.17.0 // indirect
+	golang.org/x/net v0.18.0 // indirect
 )
