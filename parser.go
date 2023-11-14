@@ -20,7 +20,7 @@ var DayRegexes = []DayMatcher{
 		Regex:     regexp.MustCompile(`(?i)Mandag\s([\S\s]*)\sTirsdag`),
 	},
 	{
-		NameOfDay: "Tirdsag",
+		NameOfDay: "Tirsdag",
 		Regex:     regexp.MustCompile(`(?i)Tirsdag\s([\S\s]*)\sOnsdag`),
 	},
 	{
