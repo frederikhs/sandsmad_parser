@@ -28,6 +28,17 @@ func givenIGetDishesBack(t *testing.T, f func() ([]DishOfTheDay, error)) {
 	}
 }
 
+func givenDishOfTheDay(nameOfDay DishDay) *DishOfTheDay {
+	return &DishOfTheDay{
+		NameOfDay:        nameOfDay,
+		ShortDescription: "Noget meget lækkert mad og andet samt mere",
+		Lines: []string{
+			"En lækker ting",
+			"En endnu mere lækker ting",
+		},
+	}
+}
+
 var ExampleFile = []byte(`
 <!doctype html>
 <html lang="da-DK">

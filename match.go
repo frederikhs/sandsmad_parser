@@ -8,7 +8,7 @@ import (
 
 // DayMatcher is a struct containing a regular expression for matching the lines that describes a dish on a particular day
 type DayMatcher struct {
-	NameOfDay string
+	NameOfDay DishDay
 	Regex     *regexp.Regexp
 }
 
