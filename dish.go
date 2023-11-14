@@ -9,10 +9,10 @@ type DishDay string
 
 const (
 	Monday    DishDay = "Mandag"
-	Tuesday           = "Tirsdag"
-	Wednesday         = "Onsdag"
-	Thursday          = "Torsdag"
-	Friday            = "Fredag"
+	Tuesday   DishDay = "Tirsdag"
+	Wednesday DishDay = "Onsdag"
+	Thursday  DishDay = "Torsdag"
+	Friday    DishDay = "Fredag"
 )
 
 var ErrWeekdayNotDishDay = errors.New("weekday is not a dish day")
