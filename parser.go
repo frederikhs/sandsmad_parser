@@ -17,23 +17,23 @@ type SandsPage struct {
 var DayRegexes = []DayMatcher{
 	{
 		NameOfDay: "Mandag",
-		Regex:     regexp.MustCompile(`Mandag\s([\S\s]*)\sTirsdag`),
+		Regex:     regexp.MustCompile(`(?i)Mandag\s([\S\s]*)\sTirsdag`),
 	},
 	{
 		NameOfDay: "Tirdsag",
-		Regex:     regexp.MustCompile(`Tirsdag\s([\S\s]*)\sOnsdag`),
+		Regex:     regexp.MustCompile(`(?i)Tirsdag\s([\S\s]*)\sOnsdag`),
 	},
 	{
 		NameOfDay: "Onsdag",
-		Regex:     regexp.MustCompile(`Onsdag\s([\S\s]*)\sTorsdag`),
+		Regex:     regexp.MustCompile(`(?i)Onsdag\s([\S\s]*)\sTorsdag`),
 	},
 	{
 		NameOfDay: "Torsdag",
-		Regex:     regexp.MustCompile(`Torsdag\s([\S\s]*)\sFredag`),
+		Regex:     regexp.MustCompile(`(?i)Torsdag\s([\S\s]*)\sFredag`),
 	},
 	{
 		NameOfDay: "Fredag",
-		Regex:     regexp.MustCompile(`Fredag\s([\S\s]*)\sMonday`),
+		Regex:     regexp.MustCompile(`(?i)Fredag\s([\S\s]*)\sMonday`),
 	},
 }
 

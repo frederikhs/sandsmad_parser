@@ -50,7 +50,7 @@ func TestShortDescription(t *testing.T) {
 	for _, testCase := range testCases {
 		shorted := shortDescription(testCase.Before)
 		if shorted != testCase.After {
-			t.Fatalf("expected \"%s\" to equal \"%s\"", testCase.After, shorted)
+			t.Fatalf("expected \"%s\", got \"%s\"", testCase.After, shorted)
 		}
 	}
 }

@@ -16,7 +16,7 @@ type DayMatcher struct {
 func (dm DayMatcher) Match(page *SandsPage) (*DishOfTheDay, error) {
 	matches := dm.Regex.FindStringSubmatch(page.Menu)
 	if len(matches) != 2 {
-		return nil, fmt.Errorf("could not find match for day: %s", dm.NameOfDay)
+		return nil, fmt.Errorf("could not find match for day: \"%s\" with menu: %s", dm.NameOfDay, page.Menu)
 	}
 
 	lines := trimLines(strings.Split(matches[1], "\n"))
