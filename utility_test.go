@@ -45,6 +45,18 @@ func TestShortDescription(t *testing.T) {
 			Before: "Kalkun deller",
 			After:  "Kalkun deller",
 		},
+		{
+			Before: "Urte deller med løg, hvidløg, spinat, magert svinekød (3 stykker pr. person) indeholder gluten",
+			After:  "Urte deller med løg, hvidløg, spinat, magert svinekød",
+		},
+		{
+			Before: "Vegetarisk dild dellen (4 stk. pr. person)",
+			After:  "Vegetarisk dild dellen",
+		},
+		{
+			Before: "kyllingeschnitzel med rug/nøddemel og røget paprika maskeret med mild tomatflødeostsauce (1 stk pr. person) indeholder gluten og laktose",
+			After:  "Kyllingeschnitzel med rug/nøddemel",
+		},
 	}
 
 	for _, testCase := range testCases {

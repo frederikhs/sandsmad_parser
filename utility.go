@@ -1,6 +1,9 @@
 package sandsmad_parser
 
-import "strings"
+import (
+	"strings"
+	"unicode"
+)
 
 // trimLines trims spaces for each line and removes empty lines
 func trimLines(lines []string) []string {
@@ -22,9 +25,19 @@ func shortDescription(line string) string {
 		short = strings.Split(line, "samt")[0]
 	} else if strings.Contains(line, "og") {
 		short = strings.Split(line, "og")[0]
+	} else if strings.Contains(line, "(") && strings.Contains(line, ")") {
+		short = strings.Split(line, "(")[0]
 	} else {
 		short = line
 	}
 
-	return strings.TrimSpace(short)
+	short = strings.TrimSpace(short)
+
+	// capitalize first letter
+	shortRunes := []rune(short)
+	firstLetter := shortRunes[0]
+	shortRunes[0] = unicode.ToUpper(firstLetter)
+	short = string(shortRunes)
+
+	return short
 }
