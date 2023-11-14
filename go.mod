@@ -1,6 +1,6 @@
 module github.com/frederikhs/sandsmad_parser
 
-go 1.20.11
+go 1.20
 
 require (
 	astuart.co/goq v1.0.0
