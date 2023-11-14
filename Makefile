@@ -10,4 +10,8 @@ lint:
 	golangci-lint run
 
 test:
-	go test -race -cover -v ./...
+	go test -race -v ./...
+
+cover:
+	go test -race -cover -coverprofile=coverage.out -v ./...
+	go tool cover -html=coverage.out
