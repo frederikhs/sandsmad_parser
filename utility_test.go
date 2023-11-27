@@ -57,6 +57,10 @@ func TestShortDescription(t *testing.T) {
 			Before: "kyllingeschnitzel med rug/nøddemel og røget paprika maskeret med mild tomatflødeostsauce (1 stk pr. person) indeholder gluten og laktose",
 			After:  "Kyllingeschnitzel med rug/nøddemel",
 		},
+		{
+			Before: "Indisk Butter chicken med ingefær løg hvidløg yoghurt cashew nødder",
+			After:  "Indisk Butter chicken med ingefær løg hvidløg yoghurt cashew nødder",
+		},
 	}
 
 	for _, testCase := range testCases {
