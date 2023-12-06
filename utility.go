@@ -25,10 +25,12 @@ func shortDescription(line string) string {
 		short = strings.Split(line, "samt")[0]
 	} else if strings.Contains(line, " og ") {
 		short = strings.Split(line, " og ")[0]
-	} else if strings.Contains(line, "(") && strings.Contains(line, ")") {
-		short = strings.Split(line, "(")[0]
 	} else {
 		short = line
+	}
+
+	if strings.Contains(short, "(") {
+		short = strings.Split(short, "(")[0]
 	}
 
 	short = strings.TrimSpace(short)

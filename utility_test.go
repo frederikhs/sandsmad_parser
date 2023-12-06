@@ -61,12 +61,16 @@ func TestShortDescription(t *testing.T) {
 			Before: "Indisk Butter chicken med ingefær løg hvidløg yoghurt cashew nødder",
 			After:  "Indisk Butter chicken med ingefær løg hvidløg yoghurt cashew nødder",
 		},
+		{
+			Before: "Lasagne lavet med nedkogt tomat løg balsamico oregano frisk basilikum mager oksekød gratineret med revet mozzarella (indeholder gluten og laktose)",
+			After:  "Lasagne lavet med nedkogt tomat løg balsamico oregano frisk basilikum mager oksekød gratineret med revet mozzarella",
+		},
 	}
 
 	for _, testCase := range testCases {
 		shorted := shortDescription(testCase.Before)
 		if shorted != testCase.After {
-			t.Fatalf("expected \"%s\", got \"%s\"", testCase.After, shorted)
+			t.Errorf("expected \"%s\", got \"%s\"", testCase.After, shorted)
 		}
 	}
 }
