@@ -65,6 +65,10 @@ func TestShortDescription(t *testing.T) {
 			Before: "Lasagne lavet med nedkogt tomat løg balsamico oregano frisk basilikum mager oksekød gratineret med revet mozzarella (indeholder gluten og laktose)",
 			After:  "Lasagne lavet med nedkogt tomat løg balsamico oregano frisk basilikum mager oksekød gratineret med revet mozzarella",
 		},
+		{
+			Before: "Boller i karry lavet med mager svinekød/kalvekød løg urter hvidløg sauce med karry mælk kokosmælk lime karry blade (3 stk. pr. person) indeholder gluten og laktose)",
+			After:  "Boller i karry lavet med mager svinekød/kalvekød løg urter hvidløg sauce med karry mælk kokosmælk lime karry blade",
+		},
 	}
 
 	for _, testCase := range testCases {
